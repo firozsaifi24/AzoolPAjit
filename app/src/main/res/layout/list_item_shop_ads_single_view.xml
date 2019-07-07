@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:background="@android:color/transparent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_shop_ads"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border_cards_grey"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/img_ads_item"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/grey_light"
+                android:scaleType="fitXY" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/txt_name_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="start|center"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="ADHWA ALAZEEZIAH"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_accident_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name_english"
+                android:layout_marginTop="3dp"
+                android:gravity="start|center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Accident Car (20)"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_small" />
+
+            <TextView
+                android:id="@+id/txt_spare_parts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_accident_car"
+                android:layout_marginTop="3dp"
+                android:gravity="start|center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Spare Parts (15)"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_small" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_spare_parts"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/txt_view_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/visit_shop_button"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:text="VISIT SHOP"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_large" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.AddProductFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff">
+
+
+        <ImageView
+            android:id="@+id/menu_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="65dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/azool_logo" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:padding="8dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADD PRODUCT"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/select_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/add_part_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="3dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/add_part_sublayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/img_add_part"
+                                    android:layout_width="9dp"
+                                    android:layout_height="11dp"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/border_dot"
+                                    android:src="@drawable/ic_dot_black_24dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_add_part"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@id/img_add_part"
+                                    android:paddingStart="10dp"
+                                    android:text="Add Part"
+                                    android:textSize="@dimen/txt_size_medium"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/spare_parts_new2" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/add_car_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/add_car_sublayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/img_add_car"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/border_dot" />
+
+                                <TextView
+                                    android:id="@+id/txt_add_car"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@id/img_add_car"
+                                    android:paddingStart="10dp"
+                                    android:text="Add Car"
+                                    android:textSize="@dimen/txt_size_medium"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/crashed_car2" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/brand_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/txt_border_rectangle"
+                        android:paddingStart="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/img_down_brand"
+                            android:text="CAR BRAND"
+                            android:textSize="@dimen/txt_size_small" />
+
+                        <ImageView
+                            android:id="@+id/img_down_brand"
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_border_rectangle"
+                            android:clickable="false"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_down_popup" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/model_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@drawable/txt_border_rectangle"
+                        android:paddingStart="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_model"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/img_down_model"
+                            android:text="CAR MODEL"
+                            android:textSize="@dimen/txt_size_small" />
+
+                        <ImageView
+                            android:id="@+id/img_down_model"
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_border_rectangle"
+                            android:clickable="false"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_down_popup" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/year_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@drawable/txt_border_rectangle"
+                        android:paddingStart="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/img_down_year"
+                            android:text="YEAR"
+                            android:textSize="@dimen/txt_size_small" />
+
+                        <ImageView
+                            android:id="@+id/img_down_year"
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_border_rectangle"
+                            android:clickable="false"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_down_popup" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/category_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@drawable/txt_border_rectangle"
+                        android:paddingStart="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_categoy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/img_down_category"
+                            android:text="SPARE PARTS CATEGORY"
+                            android:textSize="@dimen/txt_size_small" />
+
+                        <ImageView
+                            android:id="@+id/img_down_category"
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_border_rectangle"
+                            android:clickable="false"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_down_popup" />
+
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/etxt_title_english"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@drawable/txt_border_rectangle"
+                        android:gravity="center_vertical"
+                        android:hint="TITLE"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/txt_size_small" />
+
+                    <EditText
+                        android:id="@+id/etxt_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@drawable/txt_border_rectangle"
+                        android:gravity="top"
+                        android:hint="DESCRIPTION"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:textSize="@dimen/txt_size_small"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etxt_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@drawable/txt_border_rectangle"
+                        android:gravity="center_vertical"
+                        android:hint="PRODUCT PRICE IN AED"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/txt_size_small"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="Add Pictures"
+                android:textSize="@dimen/txt_size_xlarge"
+                android:textColor="@color/orange" />
+
+            <LinearLayout
+                android:id="@+id/image_multi_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:id="@+id/imageOne"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_camera_plus" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageTwo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_camera_plus" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageThree"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_camera_plus" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_top"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@drawable/selecter_btn_red"
+                android:paddingEnd="35dp"
+                android:paddingStart="35dp"
+                android:text="Add Product"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

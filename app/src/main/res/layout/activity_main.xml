@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:animateLayoutChanges="true"/>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        app:menu="@menu/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/menutext"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@color/menutext" />
+
+
+</RelativeLayout>
+
+
+
+    <!--  bottom navigation info settings
+       app:menu — The menu resource file to display the navigation items along with icon and text.
+       app:itemBackground — Applies background color to bottom navigation.
+       app:itemTextColor — The text color of bottom navigation item.
+       app:itemIconTint — The icon color of bottom navigation item.-->

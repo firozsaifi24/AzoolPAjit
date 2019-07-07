@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:id="@+id/item_home_ads"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_cards_ads_blue"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="195dp">
+
+            <ImageView
+                android:id="@+id/img_ads_item"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:background="@color/grey_light"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/txt_price"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/img_ads_item"
+                android:layout_alignStart="@+id/img_ads_item"
+                android:layout_marginBottom="-15dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/visit_shop_price_button"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="AED 180000"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_view_shop"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/img_ads_item"
+                android:layout_alignEnd="@+id/img_ads_item"
+                android:layout_marginBottom="-15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/visit_shop_button"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="VISIT SHOP"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="زيارة متجر"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="2dp"
+            android:layout_marginBottom="3dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/txt_name_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:gravity="start|center"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="@dimen/txt_size_very_small"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name_english"
+                android:visibility="gone">
+
+
+                <TextView
+
+                    android:id="@+id/txt_name_arabic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/txt_size_very_small" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

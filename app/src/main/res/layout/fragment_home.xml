@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+    android:id="@+id/top_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/menu_btn"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="65dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/azool_logo" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_change_ads_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_grid_on_black_24dp" />
+
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+
+    <LinearLayout
+        android:id="@+id/cards_layout"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/accident_car_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_accident_Car"
+                        android:layout_width="36dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_car_black_24dp" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txt_accident_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accident Car"
+                    android:textAlignment="center"
+                    android:textColor="#404040"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_arabic_accident_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="حادث سيارة"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/txt_size_small"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spare_parts_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/img_spare_parts"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spare_parts_new2" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txt_spare_parts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Spare Parts"
+                    android:textAlignment="center"
+                    android:textColor="#404040"
+                    android:textSize="12dp"
+                     />
+
+                <TextView
+                    android:id="@+id/txt_arabic_spare_parts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="قطعة منفصلة"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/txt_size_small"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/request_parts_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    >
+                <ImageView
+                    android:id="@+id/img_request_parts"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_content_paste_black_24dp" />
+                </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/txt_request_parts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Request Parts"
+                    android:textAlignment="center"
+                    android:textColor="#404040"
+                    android:textSize="12dp"
+                     />
+
+                <TextView
+                    android:id="@+id/txt_arabic_request_parts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="طلب قطع غيار"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/txt_size_small"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/brand_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/txt_border_rectangle_new"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="3dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/img_down_brand"
+                    android:paddingStart="10dp"
+                    android:text="Brand"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_small"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_down_brand"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:src="@drawable/ic_down_popup_new_white_100dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/model_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/txt_border_rectangle_new"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/img_down_model"
+                    android:paddingStart="10dp"
+                    android:text="Model"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_small"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_down_model"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:src="@drawable/ic_down_popup_new_white_100dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/year_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/txt_border_rectangle_new"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/img_down_year"
+                    android:paddingStart="10dp"
+                    android:text="Year"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_small"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_down_year"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:src="@drawable/ic_down_popup_new_white_100dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingEnd="5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etxt_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/img_search_icon"
+            android:hint="Search"
+            android:background="@color/white"
+            android:paddingStart="20dp"
+            android:textSize="@dimen/txt_size_small" />
+
+        <ImageView
+            android:id="@+id/img_search_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_search_black_24dp" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_home_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

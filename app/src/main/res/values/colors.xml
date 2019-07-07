@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="semi_black">#60000000</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="grey_dark">#212121</color>
+    <color name="grey_light">#e9e6e6</color>
+    <color name="grey_very_light">#f5f4f4</color>
+    <color name="grey_etxt">#DEDCDD</color>
+    <color name="red">#F44336</color>
+    <color name="red_light">#ec9a94</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="menutext">#666565</color>
+    <color name="camerapluscolor">#5D5D59</color>
+    <color name="black_light">#646363</color>
+    <color name="transperant_black">#30000000</color>
+    <color name="gold">#ffd700</color>
+
+    <color name="orenge">#E5352D</color>
+    <color name="orange">#fd650e</color>
+    <color name="mapcolor">#1c73e4</color>
+    <color name="orange_light">#fda10e</color>
+    <color name="orenge_light">#ec716c</color>
+
+    <color name="blue">#0193CF</color>
+    <color name="blue_light">#66bee2</color>
+
+
+
+    <!-- Slider screen color -->
+    <color name="bg_screen1_txt_color">#848282</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#2794de</color>
+    <color name="bg_screen2">#f9634c</color>
+    <color name="bg_screen3">#2794de</color>
+    <color name="bg_screen4">#ffffff</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#0676c2</color>
+    <color name="dot_dark_screen2">#fa2e0e</color>
+    <color name="dot_dark_screen3">#0676c2</color>
+    <color name="dot_dark_screen4">#fa2e0e</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#8cf9eb</color>
+    <color name="dot_light_screen2">#faada0</color>
+    <color name="dot_light_screen3">#8cf9eb</color>
+    <color name="dot_light_screen4">#faada0</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <!-- Slider screen color ends here -->
+
+</resources>

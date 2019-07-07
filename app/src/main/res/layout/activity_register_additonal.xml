@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    android:background="@drawable/register_bg"
+    tools:context="com.example.firozsaifi.azoolp.activity.RegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/menu_btn"
+                android:layout_width="@dimen/btn_back_length"
+                android:layout_height="@dimen/btn_back_length"
+                android:layout_alignParentStart="true"
+                android:layout_margin="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <RelativeLayout
+                android:id="@+id/logo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:padding="30dp"
+                    android:scaleType="centerInside"
+                    android:visibility="gone"
+                    android:src="@drawable/azool_logo_60" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_layout"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etxt_shop_title_english"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@drawable/txt_border_rectangle"
+                        android:gravity="center_vertical"
+                        android:hint="Shop Name English"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/txt_size_small" />
+
+                    <EditText
+                        android:id="@+id/etxt_shop_title_arabic"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@drawable/txt_border_rectangle"
+                        android:gravity="center_vertical"
+                        android:hint="Shop Name Arabic"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/txt_size_small" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etxt_shop_phnne_number"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="@dimen/margin_small"
+                            android:layout_marginStart="@dimen/margin_medium"
+                            android:layout_weight="1"
+                            android:background="@drawable/txt_border_rectangle"
+                            android:gravity="center_vertical"
+                            android:hint="Phone Number"
+                            android:inputType="number|textNoSuggestions"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/txt_size_small" />
+
+                        <EditText
+                            android:id="@+id/etxt_shop_whatsapp_number"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="@dimen/margin_medium"
+                            android:layout_marginStart="@dimen/margin_small"
+                            android:layout_weight="1"
+                            android:background="@drawable/txt_border_rectangle"
+                            android:gravity="center_vertical"
+                            android:hint="Whatsapp Number"
+                            android:inputType="number|textNoSuggestions"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/txt_size_small" />
+
+                    </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/etxt_shop_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:layout_marginStart="@dimen/margin_medium"
+                            android:layout_marginEnd="@dimen/margin_medium"
+                            android:background="@drawable/txt_border_rectangle"
+                            android:gravity="top"
+                            android:hint="Shop Address"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:lines="2"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:textSize="@dimen/txt_size_small" />
+
+                    <EditText
+                        android:id="@+id/etxt_shop_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="@drawable/txt_border_rectangle"
+                        android:gravity="top"
+                        android:hint="Description"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:lines="4"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:textSize="@dimen/txt_size_small" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/image_multi_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginEnd="@dimen/margin_x_large"
+                    android:layout_marginStart="@dimen/margin_x_large"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:orientation="horizontal"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/imageOne"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Logo"
+                                android:textSize="@dimen/txt_size_large"/>
+
+                            <ImageView
+                                android:id="@+id/img_one"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_camera_plus" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/imageTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Shop Picture"
+                                android:textSize="@dimen/txt_size_large"/>
+
+                            <ImageView
+                                android:id="@+id/img_two"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_camera_plus" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_top"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginStart="28dp"
+                    android:background="@drawable/selecter_btn_red"
+                    android:text="REGISTER"
+                    android:textSize="@dimen/txt_size_small"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

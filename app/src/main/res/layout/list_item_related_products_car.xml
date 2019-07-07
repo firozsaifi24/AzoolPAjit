@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="150dp"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:id="@+id/item_related_products_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_cards_grey"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img_ads_item"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="@color/grey_light"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/price_layout"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/img_ads_item"
+                android:layout_alignStart="@+id/img_ads_item"
+                android:layout_marginBottom="-9dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="AED 180000"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/txt_name_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:gravity="start|center"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="@dimen/txt_size_very_small"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

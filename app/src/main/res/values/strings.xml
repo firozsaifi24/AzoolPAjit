@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Azool</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description"><u>Description</u></string>
+
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+
+
+    <!-- Slider screen text -->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">WELCOME</string>
+    <string name="slide_1_desc">Biggest Car spare parts online portal in the GCC. Where buyers meet sellers!
+    </string>
+
+    <string name="slide_2_title">SPARE PARTS</string>
+    <string name="slide_2_desc">You can post ads or buy old/new spare spare parts!</string>
+
+    <string name="slide_3_title">ACCIDENT CARS</string>
+    <string name="slide_3_desc">You can post ads or buy old cars!</string>
+
+    <string name="slide_4_title">REQUEST PARTS</string>
+    <string name="slide_4_desc">Not found parts? You can request for parts here!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <!-- Slider screen text ends here -->
+
+    <string name="msg_need_permission">You should give permission to continue.</string>
+
+</resources>

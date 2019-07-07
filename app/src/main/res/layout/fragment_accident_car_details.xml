@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.AccidentCarDetailsFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff">
+
+
+        <ImageView
+        android:id="@+id/menu_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="65dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/azool_logo" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:padding="8dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/img_image_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/img_one_layout"
+                        android:layout_width="150dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/border2selected"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_image_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="fitXY"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/img_two_layout"
+                        android:layout_width="150dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/border2"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_image_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="fitXY"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/img_three_layout"
+                        android:layout_width="150dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/border2"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_image_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="fitXY"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posted on 20th July, 2018"
+                    android:textSize="@dimen/txt_size_very_small"
+                    android:layout_marginStart="5dp"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/txt_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AED 45000"
+                    android:layout_marginEnd="5dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maruti suzuki 810"
+                    android:layout_marginStart="5dp"
+                    android:textSize="@dimen/txt_size_medium"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/brand_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:gravity="center"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/img_brand"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_brand" />
+
+                        <TextView
+                            android:id="@+id/txt_brand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="100"
+                            android:singleLine="false"
+                            android:text="Toyota"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_very_small" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/model_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:gravity="center"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/img_model"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_model" />
+
+                        <TextView
+                            android:id="@+id/txt_model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Camry"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_very_small" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/year_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:gravity="center"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/img_year"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_calender" />
+
+                        <TextView
+                            android:id="@+id/txt_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2018"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_very_small" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@id/share_layout"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:background="@drawable/border_details_fragment"
+                        android:text="This car is for sale toyota 2018" />
+
+                    <LinearLayout
+                        android:id="@+id/share_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="5dp"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_share"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_share_orange" />
+
+                        <TextView
+                            android:id="@+id/txt_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Share"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_very_small" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/visit_shop_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/orange"
+                android:clickable="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="7dp"
+                    android:src="@drawable/shop_icon_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|start"
+                    android:text="VISIT SHOP"
+                    android:fontFamily="serif"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_small"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:text="RELATED PRODUCT"
+                android:fontFamily="@font/audiowide_regular"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_large"
+                android:background="#0093cf"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_related_accident_car"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@color/mapcolor">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/icon_map" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_size_large" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@color/orange">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_phone_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call Now"
+                        android:textSize="@dimen/txt_size_large"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/nav_shop_black_24dp"
+        android:title="SHOP" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/nav_home_black_24dp"
+        android:title="HOME" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/nav_account_black24dp"
+        android:title="MY ACCOUNT" />
+
+
+
+</menu>
